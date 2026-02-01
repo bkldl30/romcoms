@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Romantic Comedy</title>
+  <style>
+    :root {
+      --bg: #0f0f14;
+      --card: #1a1a23;
+      --text: #eaeaf0;
+      --muted: #b5b5c5;
+      --accent: #ff6b81;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+      overflow: hidden;
+      background-image:
+        linear-gradient(rgba(15,15,20,0.6), rgba(15,15,20,0.9)),
+        url("https://www.indiewire.com/wp-content/uploads/2023/02/How-to-Lose-a-Guy.webp?w=2048&h=1374&crop=1");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      }
+
+    header h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    header p {
+      max-width: 800px;
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+
+    main {
+      width: 100%;
+      padding: 80px 5vw;
+    }
+
+    .movie {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 50px;
+      margin-bottom: 120px;
+      align-items: center;
+    }
+
+    .movie:nth-child(even) {
+      grid-template-columns: 1.2fr 1fr;
+    }
+
+    .movie-info h2 {
+      font-size: 2.4rem;
+      margin-bottom: 15px;
+    }
+
+    .movie-info p {
+      color: var(--muted);
+      max-width: 500px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 14px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    footer {
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    @media (max-width: 900px) {
+      .movie {
+        grid-template-columns: 1fr;
+      }
+      .movie:nth-child(even) {
+        grid-template-columns: 1fr;
+      }
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Romantic Comedy Movies</h1>
+    <p>
+      Love, laughter, and unforgettable cinematic moments—romantic comedies capture the beauty of
+      falling in love when you least expect it.
+    </p>
+  </div>
+</header>
+
+<main>
+  <section class="movie">
+    <div class="movie-info">
+      <h2>10 Things I Hate About You (1999)</h2>
+      <p>
+        A modern retelling of Shakespeare’s <em>The Taming of the Shrew</em>, this film blends sharp wit,
+        emotional vulnerability, and iconic high school romance, making it a defining rom-com of the late 90s.
+      </p>
+    </div>
+    <div class="gallery">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTczODk3MzAyOF5BMl5BanBnXkFtZTcwMDMyODAyNw@@._V1_.jpg" alt="Kat and Patrick" />
+      <img src="https://www.intofilm.org/intofilm-production/1033/scaledcropped/3000x1688/resources/1033/film-3128-10-things-i-hate-about-you-hi-res-d0ba238f.jpg" alt="High school scene" />
+      <img src="https://www.nostalchicks.com/wp-content/uploads/2024/04/VBVBVCB.jpg" alt="Romantic moment" />
+    </div>
+  </section>
+
+  <section class="movie">
+    <div class="gallery">
+      <img src="https://th.bing.com/th/id/OIP.Bmk3O8fNDfbgs1IJwHdZEAHaEK?w=329&h=185" alt="New York romance" />
+      <img src="https://th.bing.com/th/id/OIP.NDX3wQSbWYCINLYJNBkMjgHaEK?w=316&h=182" alt="Dinner scene" />
+      <img src="https://www.cheatsheet.com/wp-content/uploads/2022/05/how-to-lose-a-guy-in-10-days-book.jpg" alt="Couple moment" />
+    </div>
+    <div class="movie-info">
+      <h2>How to Lose a Guy in 10 Days (2003)</h2>
+      <p>
+        Set against the fast-paced glamour of New York City, this film thrives on playful deception,
+        stylish visuals, and undeniable chemistry between its leads.
+      </p>
+    </div>
+  </section>
+
+  <section class="movie">
+    <div class="movie-info">
+      <h2>Notting Hill (1999)</h2>
+      <p>
+        A tender love story framed by the cozy streets of London, <em>Notting Hill</em> is celebrated for
+        its warm cinematography, quiet humor, and intimate romantic moments.
+      </p>
+    </div>
+    <div class="gallery">
+      <img src="https://a.ltrbxd.com/resized/sm/upload/nh/0e/rc/g9/notting-hill-1200-1200-675-675-crop-000000.jpg" alt="London street" />
+      <img src="https://i.pinimg.com/736x/e0/0f/9b/e00f9bc9ae31aafa7a0618ca235bfe96.jpg" alt="Bookstore" />
+      <img src="https://i.guim.co.uk/img/media/d117ef88eeec88406021f7122e95ae7fc4a1d7a7/0_0_2673_1604/master/2673.jpg?width=620&dpr=2&s=none&crop=none" alt="Romantic lighting" />
+    </div>
+  </section>
+
+  <section class="movie">
+    <div class="gallery">
+      <img src="https://pics.filmaffinity.com/27_dresses-960602221-large.jpg" alt="New York romance" />
+      <img src="https://iv1.lisimg.com/image/8530415/550full-27-dresses-screenshot.jpg" alt="Dinner scene" />
+      <img src="https://th.bing.com/th/id/OIP.pWa19suFsoYHivul09A2hgAAAA?w=240&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Couple moment" />
+    </div>
+    <div class="movie-info">
+      <h2>27 Dresses (2008)</h2>
+      <p>
+        A charming romantic comedy about a devoted bridesmaid who has spent her life supporting others'
+         love stories, only to confront her own feelings when romance unexpectedly finds her. The film 
+         blends heartfelt moments with humor, highlighting themes of self-discovery and modern love.
+      </p>
+    </div>
+  </section>
+
+  <section class="movie">
+    <div class="movie-info">
+      <h2>13 Going On 30 (2004)</h2>
+      <p>
+        This romantic comedy follows a young girl who magically wakes up as her thirty-year-old self, 
+        discovering the realities of adulthood, love, and ambition. With its playful fantasy and emotional 
+        warmth, the film explores nostalgia, second chances, and staying true to oneself.
+      </p>
+    </div>
+    <div class="gallery">
+      <img src="https://image.tmdb.org/t/p/original/xLVk9A6FL5vwNvBkWgL370bFsZi.jpg" alt="London street" />
+      <img src="https://pics.filmaffinity.com/13_going_on_30-805998127-large.jpg" alt="Bookstore" />
+      <img src="https://hips.hearstapps.com/hmg-prod/images/screenshot-2024-02-01-at-10-08-56-am-65bbb4213dcc5.png?crop=0.740xw:1.00xh;0.207xw,0" alt="Romantic lighting" />
+    </div>
+  </section>
+
+  <section class="movie">
+    <div class="gallery">
+      <img src="https://th.bing.com/th/id/OIP.WNSDHoH5B-WmZwLQxVuctgHaEK?w=286&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="New York romance" />
+      <img src="https://m.media-amazon.com/images/M/MV5BMjA0MTc5NDkzOV5BMl5BanBnXkFtZTcwNTU2Mzg3NA@@._V1_QL75_UX490.5_.jpg" alt="Dinner scene" />
+      <img src="https://highdefdiscnews.com/wp-content/uploads/2018/12/when_harry_met_sally_30th_anniversary_edition_60-300x169.png" alt="Couple moment" />
+    </div>
+    <div class="movie-info">
+      <h2>When Harry Met Sally (1989)</h2>
+      <p>
+        Two decades of chanced encounters, hilarious debates about love and friendship, and the ultimate
+        question: Can men and women just be friends?
+      </p>
+    </div>
+  </section>
+
+  <section class="movie">
+    <div class="movie-info">
+      <h2>The Holiday (2006)</h2>
+      <p>
+        Two women swap homes, hearts get tangled across continents, and romance proves that sometimes,
+        a change of scenery is all it takes to find love.
+      </p>
+    </div>
+    <div class="gallery">
+      <img src="https://www.brit.co/media-library/iris-and-arthur-the-holiday-movie.jpg?id=55368477&width=2400&height=2390" alt="London street" />
+      <img src="https://www.brightwalldarkroom.com/wp-content/uploads/2017/04/theholiday.jpg" alt="Bookstore" />
+      <img src="https://www.nzherald.co.nz/resizer/v2/HB727V3FWFCFDNS7ZIBXLZ2DQA.jpg?auth=479ddddc12345c26393848f462aef1e86b7e220ae74edebf9ed0915a83cfb486&width=1440&height=810&quality=70&focal=239%2C122&smart=false" alt="Romantic lighting" />
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; Webpage Project • Empowerment Technologies</p>
+</footer>
+
+</body>
+</html>
